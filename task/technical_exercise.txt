@@ -1,0 +1,26 @@
+Technical Exercise
+
+
+
+Using Burlington, Ontario, Canada as the target market, please complete the following assignment:
+
+Identify how many cannabis retail stores currently operate within Burlington and the surrounding area, using a 35 km radius.
+Create a store list that includes:
+Store name
+Address
+Phone number
+Hours of operation
+Owners Details
+Collect the products each store is currently carrying, both on its website and in-store, along with listed pricing, including:
+Regular price
+Sale or promotional price
+Duration of the sale or promotion, where applicable
+Compare this data against platforms such as HiBuddy.ca and other relevant market sources.
+Develop a business analytics summary that addresses the following:
+Which products are carried across all or most stores?
+What appears to be the sales velocity or sell-through potential of those products?
+How often do these products change in price?
+Which new and upcoming items are appearing through the Ontario Cannabis Store and similar channels?
+What public commentary or sentiment is available about these products from sources such as Reddit?
+Organize your findings into clear, presentable datasets and actionable insights that would help a company like MontKailash Cannabis outperform competitors in the market.
+This task is intended to demonstrate your technical capability in data collection, analysis, competitive intelligence, and the presentation of business-useful outputs.

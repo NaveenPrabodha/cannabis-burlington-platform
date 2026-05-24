@@ -1,0 +1,54 @@
+                                    Cannabis Price Comparison & Store Discovery Platform
+                                                One-Page Project Task Brief
+
+Platform Type
+    Web — Product price comparison & store discovery
+Industry
+    Cannabis Retail — Burlington, Ontario & 35 km radius
+Data Source
+    Existing database from previous technical exercise (stores, products, prices)
+Tech Stack
+    Next.js / React (Frontend) · Python FastAPI or Django (Backend) · Swagger
+Authentication
+    Not required
+
+Frontend Developer Tasks (Next.js / React)
+	•	Homepage — featured products, deals, and category navigation
+	•	Product Listings page — browsable grid with filters: category, brand, price range
+	•	Product Detail page — product info, regular price, sale price, and which stores carry it
+	•	Store Listings page — list of stores with name, address, phone, and hours
+	•	Store Detail page — store profile with full details and its current product list with prices
+	•	Deals page — products currently on sale or promotion with duration where available
+	•	Search — keyword search across products and stores
+	•	Responsive, mobile-friendly layout across all pages
+
+Backend Developer Tasks (Python — FastAPI or Django)
+	•	Connect to the existing database from the previous exercise (no rebuild needed)
+	•	API endpoint: list all stores with name, address, phone, hours, and owner details
+	•	API endpoint: list all products with regular price, sale price, and promotion duration
+	•	API endpoint: store detail — returns a single store and all products it currently carries
+	•	API endpoint: product detail — returns product info and all stores carrying it with prices
+	•	API endpoint: deals — returns all products currently on sale or promotion
+	•	API endpoint: search — query products and stores by keyword
+	•	Document all endpoints via Swagger / OpenAPI so frontend can integrate easily
+
+GitHub — Upload & Share
+	•	Create a GitHub repository and upload all frontend and backend code
+	•	Organize repo with clear folder structure: /frontend and /backend
+	•	Add a README with project overview and setup instructions
+	•	Share repository access with all team members
+
+Expected Deliverables
+
+Frontend
+✔ Homepage, Product Listings & Detail pages
+✔ Store Listings & Store Detail pages
+✔ Deals page and keyword search
+✔ Responsive layout — no login required
+
+Backend & GitHub
+✔ API built on existing Burlington store/product DB
+✔ Endpoints for stores, products, deals & search
+✔ Full Swagger / OpenAPI documentation
+✔ Code uploaded to shared GitHub repository
+Confidential — Internal Project Brief

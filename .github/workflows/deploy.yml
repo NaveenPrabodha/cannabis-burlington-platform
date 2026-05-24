@@ -1,0 +1,27 @@
+name: Deploy to EC2
+
+# Manual trigger — keeps prod stable. Switch to push: branches: [main]
+# once you trust the pipeline + CI.
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: SSH into EC2 and redeploy
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ec2-user
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            set -e
+            cd ~/cannabis-burlington-platform
+            git fetch --all
+            git reset --hard origin/main
+            cd infra
+            docker compose -f docker-compose.prod.yml pull
+            docker compose -f docker-compose.prod.yml up -d
+            docker image prune -f
+            docker compose -f docker-compose.prod.yml ps

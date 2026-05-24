@@ -1,0 +1,9 @@
+[Unit]
+Description=Refresh HiBuddy store details every Sunday at 03:00 ET
+
+[Timer]
+OnCalendar=Sun *-*-* 03:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

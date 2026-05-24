@@ -1,0 +1,13 @@
+[Unit]
+Description=OCS new-arrivals scrape (one-shot)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=ec2-user
+WorkingDirectory=/home/ec2-user/cannabis-burlington-platform/pipeline
+EnvironmentFile=/home/ec2-user/cannabis-burlington-platform/pipeline/.env
+ExecStart=/home/ec2-user/.local/bin/uv run python -m pipeline.scrapers.ocs_new_arrivals --days 7
+StandardOutput=append:/var/log/cannabis-pipeline.log
+StandardError=append:/var/log/cannabis-pipeline.log
